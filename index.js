@@ -12,10 +12,17 @@
 //--*----1----*----2----*----3----*----4----*----5----*----6----*----7----*----8
 // NOTES: 
 //------------------------------------------------------------------------------
-// omdbapi.com
-// bulma.io/documentation/components/dropdown 
+// 
+// 
 //
 //--*----|----*----|----*----|----*----|----*----|----*----|----*----|----*----/
 
-console.log('Hi there!');
+const prjctNm = "Secret Meaas"
+const debug   = 1;    // 0: Off   1: On
+
+if (debug > 0) {
+    console.log('Hi there from ' + prjctNm + '!');
+};
+
+
 
