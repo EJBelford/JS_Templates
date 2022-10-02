@@ -13,15 +13,25 @@
 // NOTES: 
 //------------------------------------------------------------------------------
 // 
+// nodejs.org/api 
+// node --inspect-brk <prjctNm>
 // 
 //
 //--*----|----*----|----*----|----*----|----*----|----*----|----*----|----*----/
 
-const prjctNm = "Secret Meaas"
+const prjctNm = "<prjctNm>"
 const debug   = 1;    // 0: Off   1: On
+const err     = 0; 
 
 if (debug > 0) {
-    console.log('Hi there from ' + prjctNm + '!');
+    console.log('DEBUG: Hi there from ' + prjctNm + '!');
+
+    if (err) {
+        if (debug > 0) {
+            console.log('ERROR: ' + err);
+            // throw new Error(err);
+        };
+    };
 };
 
 
